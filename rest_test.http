@@ -1,0 +1,34 @@
+### ALL AUTHORS
+
+GET http://localhost:8888/api/authors
+
+
+### SINGLE AUTHORS
+GET http://localhost:8888/api/authors/3
+
+### ALL BOOKS
+
+GET http://localhost:8888/api/books
+
+### First POST request
+POST http://localhost:8888/api/authors/
+Content-Type: application/json
+
+{
+    "name": "Jennifer Nordell",
+    "title": "Student Success Specialist",
+    "company": "Treehouse",
+    "email": "stuff@example.com"
+}
+
+### First Author PUT request
+POST http://localhost:8888/api/authors/1?_method=PUT
+
+Content-Type: application/json
+
+{
+    "name": "Guil Hernandez",
+    "title": "Software Development Instructor",
+    "company": "Treehouse",
+    "email": "me@example.com"
+}
